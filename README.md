@@ -1,4 +1,4 @@
-## *QuickTrack**
+## **QuickTrack**
 
 TThis application is a simple activity tracker application which logs the list of activities done by a user with the start time, end time and duration and an option to delete
 
