@@ -1,0 +1,19 @@
+{
+  "name": "QuickTrack",
+  "version": "1.0.0",
+  "description": "Upgrad Hackathon project",
+  "scripts": {
+    "dev": "npx vite serve --host",
+    "build": "npx vite build --emptyOutDir",
+    "preview": "npx vite preview --host"
+  },
+  "author": "Sneha Dilip Kale <snehakale987@gmail.com>",
+  "license": "AFL-3.0",
+  "devDependencies": {
+    "msw": "^0.47.4",
+    "vite": "^3.2.3"
+  },
+  "msw": {
+    "workerDirectory": "src/public"
+  }
+}

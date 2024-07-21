@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>QuickTrack</h1>
+    </header>
+    <nav>
+      <button class="tab-button" onclick="changeTab('activity')">Add Activity</button>
+      <button class="tab-button" onclick="changeTab('dashboard')">Dashboard</button>
+      <button class="tab-button" onclick="changeTab('reports')">Reports</button>
+    </nav>
+    <main>
+      <section id="activity-form" class="tab-content">
+        <h2>Add New Activity</h2>
+        <form id="new-activity-form">
+          <input type="text" id="activity-name" required placeholder="Activity Name">
+          <div id="wrapper">
+            <label for="past-activity">Has this activity occured in the past?</label>
+            <p>
+            <input type="radio" id="RB1" name="past-activity">Yes</input>
+          </p>
+          <p>
+            <input type="radio" id="RB2" name="past-activity" checked>No</input>
+          </p>
+          </div>
+          <div id="datepicker-div">
+            <div class="row">
+              <label for="start-datepicker">Start Time</label>
+              <input type="datetime-local" id="start-datepicker" class="datepicker">
+            </div>
+            <div class="row">
+              <label for="end-datepicker">End Time</label>
+              <input type="datetime-local" id="end-datepicker" class="datepicker">
+            </div>
+          </div>
+          <button type="submit" id="submitButton" onclick="addActivity('')">Add Activity</button>
+        </form>
+      </section>
+      <section id="dashboard" class="tab-content">
+        <h2>Dashboard</h2>
+        <div id="past-activity-list">
+        </div>
+      </section>
+      <section id="reports" class="tab-content">
+        <h2>Reports</h2>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/2.4.0/moment-duration-format.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
